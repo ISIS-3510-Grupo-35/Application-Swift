@@ -1,0 +1,802 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D50F56412C9A3CA400880781 /* UniParkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50F56402C9A3CA400880781 /* UniParkApp.swift */; };
+		D50F56452C9A3CA600880781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D50F56442C9A3CA600880781 /* Assets.xcassets */; };
+		D50F56482C9A3CA600880781 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D50F56472C9A3CA600880781 /* Preview Assets.xcassets */; };
+		D50F56522C9A3CA700880781 /* UniParkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50F56512C9A3CA700880781 /* UniParkTests.swift */; };
+		D50F565C2C9A3CA700880781 /* UniParkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50F565B2C9A3CA700880781 /* UniParkUITests.swift */; };
+		D50F565E2C9A3CA700880781 /* UniParkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50F565D2C9A3CA700880781 /* UniParkUITestsLaunchTests.swift */; };
+		D50F56B22C9DAE2000880781 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50F56B12C9DAE2000880781 /* LoginView.swift */; };
+		D50F56B42C9DB0C900880781 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50F56B32C9DB0C900880781 /* InputView.swift */; };
+		D50F56B72C9DB88B00880781 /* SingupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50F56B62C9DB88B00880781 /* SingupView.swift */; };
+		D50F56B92C9DCA4300880781 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50F56B82C9DCA4300880781 /* ProfileView.swift */; };
+		D50F56BC2C9F386E00880781 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50F56BB2C9F386E00880781 /* SettingsRowView.swift */; };
+		D50F56BE2C9F469200880781 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50F56BD2C9F469200880781 /* User.swift */; };
+		D50F56C02C9F536C00880781 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D50F56BF2C9F536C00880781 /* GoogleService-Info.plist */; };
+		D50F56C32C9F57AF00880781 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D50F56C22C9F57AF00880781 /* FirebaseAnalytics */; };
+		D50F56C52C9F57AF00880781 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = D50F56C42C9F57AF00880781 /* FirebaseAnalyticsOnDeviceConversion */; };
+		D50F56C72C9F57AF00880781 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = D50F56C62C9F57AF00880781 /* FirebaseAppCheck */; };
+		D50F56C92C9F57AF00880781 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D50F56C82C9F57AF00880781 /* FirebaseAuth */; };
+		D50F56CB2C9F57AF00880781 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = D50F56CA2C9F57AF00880781 /* FirebaseCrashlytics */; };
+		D50F56CD2C9F57AF00880781 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = D50F56CC2C9F57AF00880781 /* FirebaseDatabase */; };
+		D50F56CF2C9F57AF00880781 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D50F56CE2C9F57AF00880781 /* FirebaseFirestore */; };
+		D50F56D12C9F57AF00880781 /* FirebaseInstallations in Frameworks */ = {isa = PBXBuildFile; productRef = D50F56D02C9F57AF00880781 /* FirebaseInstallations */; };
+		D50F56D32C9F57AF00880781 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = D50F56D22C9F57AF00880781 /* FirebaseMessaging */; };
+		D50F56D52C9F57AF00880781 /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = D50F56D42C9F57AF00880781 /* FirebasePerformance */; };
+		D50F56D72C9F57AF00880781 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = D50F56D62C9F57AF00880781 /* FirebaseStorage */; };
+		D50F56DC2C9F599D00880781 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50F56DB2C9F599C00880781 /* AuthViewModel.swift */; };
+		D50F56DE2C9F62F800880781 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50F56DD2C9F62F800880781 /* StartView.swift */; };
+		D50F56E02C9F634100880781 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50F56DF2C9F634100880781 /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D50F564E2C9A3CA700880781 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D50F56352C9A3CA400880781 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D50F563C2C9A3CA400880781;
+			remoteInfo = UniPark;
+		};
+		D50F56582C9A3CA700880781 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D50F56352C9A3CA400880781 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D50F563C2C9A3CA400880781;
+			remoteInfo = UniPark;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D50F563D2C9A3CA400880781 /* UniPark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniPark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D50F56402C9A3CA400880781 /* UniParkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniParkApp.swift; sourceTree = "<group>"; };
+		D50F56442C9A3CA600880781 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D50F56472C9A3CA600880781 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D50F564D2C9A3CA700880781 /* UniParkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UniParkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D50F56512C9A3CA700880781 /* UniParkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniParkTests.swift; sourceTree = "<group>"; };
+		D50F56572C9A3CA700880781 /* UniParkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UniParkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D50F565B2C9A3CA700880781 /* UniParkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniParkUITests.swift; sourceTree = "<group>"; };
+		D50F565D2C9A3CA700880781 /* UniParkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniParkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D50F56B12C9DAE2000880781 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D50F56B32C9DB0C900880781 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		D50F56B62C9DB88B00880781 /* SingupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingupView.swift; sourceTree = "<group>"; };
+		D50F56B82C9DCA4300880781 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		D50F56BB2C9F386E00880781 /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
+		D50F56BD2C9F469200880781 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D50F56BF2C9F536C00880781 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D50F56DB2C9F599C00880781 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		D50F56DD2C9F62F800880781 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		D50F56DF2C9F634100880781 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D50F563A2C9A3CA400880781 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D50F56D32C9F57AF00880781 /* FirebaseMessaging in Frameworks */,
+				D50F56CD2C9F57AF00880781 /* FirebaseDatabase in Frameworks */,
+				D50F56D52C9F57AF00880781 /* FirebasePerformance in Frameworks */,
+				D50F56C32C9F57AF00880781 /* FirebaseAnalytics in Frameworks */,
+				D50F56C72C9F57AF00880781 /* FirebaseAppCheck in Frameworks */,
+				D50F56D12C9F57AF00880781 /* FirebaseInstallations in Frameworks */,
+				D50F56CB2C9F57AF00880781 /* FirebaseCrashlytics in Frameworks */,
+				D50F56C52C9F57AF00880781 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				D50F56D72C9F57AF00880781 /* FirebaseStorage in Frameworks */,
+				D50F56C92C9F57AF00880781 /* FirebaseAuth in Frameworks */,
+				D50F56CF2C9F57AF00880781 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D50F564A2C9A3CA700880781 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D50F56542C9A3CA700880781 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D50F56342C9A3CA400880781 = {
+			isa = PBXGroup;
+			children = (
+				D50F563F2C9A3CA400880781 /* UniPark */,
+				D50F56502C9A3CA700880781 /* UniParkTests */,
+				D50F565A2C9A3CA700880781 /* UniParkUITests */,
+				D50F563E2C9A3CA400880781 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D50F563E2C9A3CA400880781 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D50F563D2C9A3CA400880781 /* UniPark.app */,
+				D50F564D2C9A3CA700880781 /* UniParkTests.xctest */,
+				D50F56572C9A3CA700880781 /* UniParkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D50F563F2C9A3CA400880781 /* UniPark */ = {
+			isa = PBXGroup;
+			children = (
+				D50F56AA2C9DACDC00880781 /* App */,
+				D50F56AC2C9DACF100880781 /* Components */,
+				D50F56AB2C9DACEB00880781 /* Core */,
+				D50F56AD2C9DAD1300880781 /* Model */,
+				D50F56442C9A3CA600880781 /* Assets.xcassets */,
+				D50F56DF2C9F634100880781 /* ContentView.swift */,
+				D50F56402C9A3CA400880781 /* UniParkApp.swift */,
+				D50F56462C9A3CA600880781 /* Preview Content */,
+				D50F56BF2C9F536C00880781 /* GoogleService-Info.plist */,
+			);
+			path = UniPark;
+			sourceTree = "<group>";
+		};
+		D50F56462C9A3CA600880781 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D50F56472C9A3CA600880781 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D50F56502C9A3CA700880781 /* UniParkTests */ = {
+			isa = PBXGroup;
+			children = (
+				D50F56512C9A3CA700880781 /* UniParkTests.swift */,
+			);
+			path = UniParkTests;
+			sourceTree = "<group>";
+		};
+		D50F565A2C9A3CA700880781 /* UniParkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D50F565B2C9A3CA700880781 /* UniParkUITests.swift */,
+				D50F565D2C9A3CA700880781 /* UniParkUITestsLaunchTests.swift */,
+			);
+			path = UniParkUITests;
+			sourceTree = "<group>";
+		};
+		D50F56AA2C9DACDC00880781 /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D50F56AB2C9DACEB00880781 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D50F56AE2C9DAD6A00880781 /* Authentication */,
+				D50F56B02C9DADE500880781 /* Profile */,
+				D50F56AF2C9DAD7100880781 /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D50F56AC2C9DACF100880781 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D50F56B32C9DB0C900880781 /* InputView.swift */,
+				D50F56BB2C9F386E00880781 /* SettingsRowView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D50F56AD2C9DAD1300880781 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D50F56BD2C9F469200880781 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D50F56AE2C9DAD6A00880781 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				D50F56D82C9F594D00880781 /* ViewModel */,
+				D50F56DA2C9F595E00880781 /* View */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		D50F56AF2C9DAD7100880781 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		D50F56B02C9DADE500880781 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				D50F56B82C9DCA4300880781 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		D50F56D82C9F594D00880781 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D50F56DB2C9F599C00880781 /* AuthViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D50F56DA2C9F595E00880781 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D50F56B62C9DB88B00880781 /* SingupView.swift */,
+				D50F56B12C9DAE2000880781 /* LoginView.swift */,
+				D50F56DD2C9F62F800880781 /* StartView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D50F563C2C9A3CA400880781 /* UniPark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D50F56612C9A3CA700880781 /* Build configuration list for PBXNativeTarget "UniPark" */;
+			buildPhases = (
+				D50F56392C9A3CA400880781 /* Sources */,
+				D50F563A2C9A3CA400880781 /* Frameworks */,
+				D50F563B2C9A3CA400880781 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UniPark;
+			packageProductDependencies = (
+				D50F56C22C9F57AF00880781 /* FirebaseAnalytics */,
+				D50F56C42C9F57AF00880781 /* FirebaseAnalyticsOnDeviceConversion */,
+				D50F56C62C9F57AF00880781 /* FirebaseAppCheck */,
+				D50F56C82C9F57AF00880781 /* FirebaseAuth */,
+				D50F56CA2C9F57AF00880781 /* FirebaseCrashlytics */,
+				D50F56CC2C9F57AF00880781 /* FirebaseDatabase */,
+				D50F56CE2C9F57AF00880781 /* FirebaseFirestore */,
+				D50F56D02C9F57AF00880781 /* FirebaseInstallations */,
+				D50F56D22C9F57AF00880781 /* FirebaseMessaging */,
+				D50F56D42C9F57AF00880781 /* FirebasePerformance */,
+				D50F56D62C9F57AF00880781 /* FirebaseStorage */,
+			);
+			productName = UniPark;
+			productReference = D50F563D2C9A3CA400880781 /* UniPark.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D50F564C2C9A3CA700880781 /* UniParkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D50F56642C9A3CA700880781 /* Build configuration list for PBXNativeTarget "UniParkTests" */;
+			buildPhases = (
+				D50F56492C9A3CA700880781 /* Sources */,
+				D50F564A2C9A3CA700880781 /* Frameworks */,
+				D50F564B2C9A3CA700880781 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D50F564F2C9A3CA700880781 /* PBXTargetDependency */,
+			);
+			name = UniParkTests;
+			productName = UniParkTests;
+			productReference = D50F564D2C9A3CA700880781 /* UniParkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D50F56562C9A3CA700880781 /* UniParkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D50F56672C9A3CA700880781 /* Build configuration list for PBXNativeTarget "UniParkUITests" */;
+			buildPhases = (
+				D50F56532C9A3CA700880781 /* Sources */,
+				D50F56542C9A3CA700880781 /* Frameworks */,
+				D50F56552C9A3CA700880781 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D50F56592C9A3CA700880781 /* PBXTargetDependency */,
+			);
+			name = UniParkUITests;
+			productName = UniParkUITests;
+			productReference = D50F56572C9A3CA700880781 /* UniParkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D50F56352C9A3CA400880781 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					D50F563C2C9A3CA400880781 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					D50F564C2C9A3CA700880781 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = D50F563C2C9A3CA400880781;
+					};
+					D50F56562C9A3CA700880781 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = D50F563C2C9A3CA400880781;
+					};
+				};
+			};
+			buildConfigurationList = D50F56382C9A3CA400880781 /* Build configuration list for PBXProject "UniPark" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D50F56342C9A3CA400880781;
+			packageReferences = (
+				D50F56C12C9F57AF00880781 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = D50F563E2C9A3CA400880781 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D50F563C2C9A3CA400880781 /* UniPark */,
+				D50F564C2C9A3CA700880781 /* UniParkTests */,
+				D50F56562C9A3CA700880781 /* UniParkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D50F563B2C9A3CA400880781 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D50F56482C9A3CA600880781 /* Preview Assets.xcassets in Resources */,
+				D50F56452C9A3CA600880781 /* Assets.xcassets in Resources */,
+				D50F56C02C9F536C00880781 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D50F564B2C9A3CA700880781 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D50F56552C9A3CA700880781 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D50F56392C9A3CA400880781 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D50F56DE2C9F62F800880781 /* StartView.swift in Sources */,
+				D50F56B42C9DB0C900880781 /* InputView.swift in Sources */,
+				D50F56B22C9DAE2000880781 /* LoginView.swift in Sources */,
+				D50F56B72C9DB88B00880781 /* SingupView.swift in Sources */,
+				D50F56BE2C9F469200880781 /* User.swift in Sources */,
+				D50F56B92C9DCA4300880781 /* ProfileView.swift in Sources */,
+				D50F56E02C9F634100880781 /* ContentView.swift in Sources */,
+				D50F56412C9A3CA400880781 /* UniParkApp.swift in Sources */,
+				D50F56BC2C9F386E00880781 /* SettingsRowView.swift in Sources */,
+				D50F56DC2C9F599D00880781 /* AuthViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D50F56492C9A3CA700880781 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D50F56522C9A3CA700880781 /* UniParkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D50F56532C9A3CA700880781 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D50F565C2C9A3CA700880781 /* UniParkUITests.swift in Sources */,
+				D50F565E2C9A3CA700880781 /* UniParkUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D50F564F2C9A3CA700880781 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D50F563C2C9A3CA400880781 /* UniPark */;
+			targetProxy = D50F564E2C9A3CA700880781 /* PBXContainerItemProxy */;
+		};
+		D50F56592C9A3CA700880781 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D50F563C2C9A3CA400880781 /* UniPark */;
+			targetProxy = D50F56582C9A3CA700880781 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D50F565F2C9A3CA700880781 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D50F56602C9A3CA700880781 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D50F56622C9A3CA700880781 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UniPark/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = learningSwift.UniPark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D50F56632C9A3CA700880781 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UniPark/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = learningSwift.UniPark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D50F56652C9A3CA700880781 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = learningSwift.UniParkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UniPark.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UniPark";
+			};
+			name = Debug;
+		};
+		D50F56662C9A3CA700880781 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = learningSwift.UniParkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UniPark.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UniPark";
+			};
+			name = Release;
+		};
+		D50F56682C9A3CA700880781 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = learningSwift.UniParkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UniPark;
+			};
+			name = Debug;
+		};
+		D50F56692C9A3CA700880781 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = learningSwift.UniParkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UniPark;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D50F56382C9A3CA400880781 /* Build configuration list for PBXProject "UniPark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D50F565F2C9A3CA700880781 /* Debug */,
+				D50F56602C9A3CA700880781 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D50F56612C9A3CA700880781 /* Build configuration list for PBXNativeTarget "UniPark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D50F56622C9A3CA700880781 /* Debug */,
+				D50F56632C9A3CA700880781 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D50F56642C9A3CA700880781 /* Build configuration list for PBXNativeTarget "UniParkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D50F56652C9A3CA700880781 /* Debug */,
+				D50F56662C9A3CA700880781 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D50F56672C9A3CA700880781 /* Build configuration list for PBXNativeTarget "UniParkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D50F56682C9A3CA700880781 /* Debug */,
+				D50F56692C9A3CA700880781 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D50F56C12C9F57AF00880781 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D50F56C22C9F57AF00880781 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D50F56C12C9F57AF00880781 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		D50F56C42C9F57AF00880781 /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D50F56C12C9F57AF00880781 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		D50F56C62C9F57AF00880781 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D50F56C12C9F57AF00880781 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		D50F56C82C9F57AF00880781 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D50F56C12C9F57AF00880781 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		D50F56CA2C9F57AF00880781 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D50F56C12C9F57AF00880781 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		D50F56CC2C9F57AF00880781 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D50F56C12C9F57AF00880781 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		D50F56CE2C9F57AF00880781 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D50F56C12C9F57AF00880781 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		D50F56D02C9F57AF00880781 /* FirebaseInstallations */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D50F56C12C9F57AF00880781 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseInstallations;
+		};
+		D50F56D22C9F57AF00880781 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D50F56C12C9F57AF00880781 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		D50F56D42C9F57AF00880781 /* FirebasePerformance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D50F56C12C9F57AF00880781 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebasePerformance;
+		};
+		D50F56D62C9F57AF00880781 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D50F56C12C9F57AF00880781 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D50F56352C9A3CA400880781 /* Project object */;
+}
