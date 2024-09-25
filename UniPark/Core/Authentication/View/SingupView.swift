@@ -30,25 +30,28 @@ struct SignupView: View {
                     .scaledToFit()
                     .frame(width: 200, height: 100)
                     .padding(.vertical, 32)
-                VStack(spacing: 24){
-                    
+                VStack(alignment: .leading, spacing: 24){
+                    //Email input
                     InputView(text: $email, title: "Email Address", placeHolder: "nombre@email.com")
                         .autocapitalization(.none)
-                    
+                    //Name input
                     InputView(text: $fullname, title: "Full name", placeHolder: "Pepito Perez")
-                    
+                    //Password input
                     InputView(text: $password, title: "Password", placeHolder: "Enter your password", isSecureField: true)
-                    
+                    //Confirm password input
                     InputView(text: $confirmPassword, title: "Confirm password", placeHolder: "Confirm your password", isSecureField: true)
-                    
-                    Form {
-                        Picker("Select User Type", selection: $selectedUserType) {
-                            Color.yellow
-                                ForEach(userTypes, id: \.self) { userType in
-                                                    Text(userType).tag(userType)
-                                                }
-                        }
-                    }
+                    //User type picker
+                    Text("I am a ")
+                        .font(.system(size: 14))
+                        .foregroundColor(Color(.darkGray))
+                        .fontWeight(.semibold)
+                    Picker("Select User Type", selection: $selectedUserType) {
+                        Color.yellow
+                            ForEach(userTypes, id: \.self) { userType in
+                                                Text(userType).tag(userType)
+                            }
+                    }.tint(Color(.darkGray))
+                    .font(.system(size: 14))
                     
                 }
                 .padding(.horizontal)
