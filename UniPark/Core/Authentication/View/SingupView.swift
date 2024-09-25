@@ -56,7 +56,7 @@ struct SignupView: View {
                 }
                 .padding(.horizontal)
                 .padding(.top, 13)
-                
+                //Sign up button
                 Button{
                     print("Sign user up...")
                     Task {
@@ -75,7 +75,7 @@ struct SignupView: View {
                 .cornerRadius(10)
                 .padding(.top, 24)
                 Spacer()
-                
+                //Log in navegation
                 Button {
                     dismiss()
                 } label: {

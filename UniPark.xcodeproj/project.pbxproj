@@ -34,6 +34,8 @@
 		D50F56DC2C9F599D00880781 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50F56DB2C9F599C00880781 /* AuthViewModel.swift */; };
 		D50F56DE2C9F62F800880781 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50F56DD2C9F62F800880781 /* StartView.swift */; };
 		D50F56E02C9F634100880781 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50F56DF2C9F634100880781 /* ContentView.swift */; };
+		D5C583B92CA4B4E700CF847A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C583B82CA4B4E700CF847A /* MapView.swift */; };
+		D5C583BC2CA4B53A00CF847A /* ParkingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C583BB2CA4B53A00CF847A /* ParkingDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		D50F56DB2C9F599C00880781 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		D50F56DD2C9F62F800880781 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		D50F56DF2C9F634100880781 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D5C583B82CA4B4E700CF847A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		D5C583BB2CA4B53A00CF847A /* ParkingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				D50F56AE2C9DAD6A00880781 /* Authentication */,
+				D5C583B72CA4B4B900CF847A /* Map */,
 				D50F56B02C9DADE500880781 /* Profile */,
 				D50F56AF2C9DAD7100880781 /* Root */,
 			);
@@ -246,6 +251,15 @@
 				D50F56DD2C9F62F800880781 /* StartView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		D5C583B72CA4B4B900CF847A /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				D5C583B82CA4B4E700CF847A /* MapView.swift */,
+				D5C583BB2CA4B53A00CF847A /* ParkingDetailView.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,10 +412,12 @@
 				D50F56DE2C9F62F800880781 /* StartView.swift in Sources */,
 				D50F56B42C9DB0C900880781 /* InputView.swift in Sources */,
 				D50F56B22C9DAE2000880781 /* LoginView.swift in Sources */,
+				D5C583B92CA4B4E700CF847A /* MapView.swift in Sources */,
 				D50F56B72C9DB88B00880781 /* SingupView.swift in Sources */,
 				D50F56BE2C9F469200880781 /* User.swift in Sources */,
 				D50F56B92C9DCA4300880781 /* ProfileView.swift in Sources */,
 				D50F56E02C9F634100880781 /* ContentView.swift in Sources */,
+				D5C583BC2CA4B53A00CF847A /* ParkingDetailView.swift in Sources */,
 				D50F56412C9A3CA400880781 /* UniParkApp.swift in Sources */,
 				D50F56BC2C9F386E00880781 /* SettingsRowView.swift in Sources */,
 				D50F56DC2C9F599D00880781 /* AuthViewModel.swift in Sources */,
