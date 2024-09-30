@@ -11,14 +11,23 @@ import SwiftUI
 struct ReviewView: View {
     @State var parkingSpot: ParkingDetail
     @State var review: Review
+    @Environment(\.dismiss) private var dismiss
+    
     
     var body: some View {
-        Text("Hello world")
+        VStack {
+            Text(parkingSpot.name)
+                .font(.tittle)
+                .bold()
+                .multilineTextAlignment(.leading)
+                .lineLimit(1)
+            Text(parkingSpot.address)
+        }
     }
 }
 
 struct ReviewView_Previews: PreviewProvider {
     static var previews: some View {
-        ReviewView()
+        ReviewView(parkingSpot: "El mono", review: Review())
     }
 }
