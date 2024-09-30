@@ -258,7 +258,6 @@
 				D50F56B12C9DAE2000880781 /* LoginView.swift */,
 				D50F56DD2C9F62F800880781 /* StartView.swift */,
 				D5C583BF2CA60DB700CF847A /* ReviewView.swift */,
-				D5C583BB2CA4B53A00CF847A /* ParkingDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -267,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				D5C583B82CA4B4E700CF847A /* MapView.swift */,
+				D5C583BB2CA4B53A00CF847A /* ParkingDetailView.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
