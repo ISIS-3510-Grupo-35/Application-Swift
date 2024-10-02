@@ -5,6 +5,7 @@
 //  Created by Tomas Angel on 21/09/24.
 //
 
+import SwiftUI
 import Foundation
 import FirebaseAuth
 import FirebaseFirestore
@@ -17,10 +18,10 @@ protocol AuthenticationFormProtocol {
 class AuthViewModel: ObservableObject {
     @Published var userSession: FirebaseAuth.User?
     @Published var currentUser: User?
+    private var db = FirestoreService.shared.getFirestoreReference()
     
     init() {
         self.userSession = Auth.auth().currentUser
-        
         Task {
             await fetchUser()
         }
@@ -37,19 +38,22 @@ class AuthViewModel: ObservableObject {
         }
     }
     
-    func createUser(withEmail email: String, password: String, fullname: String) async throws {
+    func createUser(withEmail email: String, password: String, fullname: String) async throws { //, isDriver: Bool, balance: Int, favoriteParkingLots: [String]) async throws {
         print("Create user...")
         do {
             let result = try await Auth.auth().createUser(withEmail: email, password: password)
             self.userSession = result.user
-            let user = User(id: result.user.uid, fullname: fullname, email: email)
+            let user = User(id: result.user.uid, fullname: fullname, email: email) //, isDriver: isDriver, balance: balance, favoriteParkingLots: favoriteParkingLots)
             let encodedUser = try Firestore.Encoder().encode(user)
-            try await Firestore.firestore().collection("users").document(user.id).setData(encodedUser)
+            try await db.collection("users").document(user.id).setData(encodedUser)
+            
             await fetchUser()
+            
         } catch {
             print("DEBUG: Failed to create user with error \(error.localizedDescription)")
         }
     }
+
     
     func signOut() {
         print("Sign out...")
@@ -62,19 +66,35 @@ class AuthViewModel: ObservableObject {
         }
     }
     
-    func deleteAccount () {
+    func deleteAccount() async {
         print("Delete account...")
         
+        guard let user = Auth.auth().currentUser else { return }
         
+        do {
+            let uid = user.uid
+            let db = FirestoreService.shared.getFirestoreReference()
+            try await db.collection("users").document(uid).delete()
+            
+            try await user.delete()
+            
+            try Auth.auth().signOut()
+            self.userSession = nil
+            self.currentUser = nil
+            
+            print("DEBUG: Account deleted successfully")
+            
+        } catch {
+            print("DEBUG: Failed to delete account with error \(error.localizedDescription)")
+        }
     }
     
     func fetchUser() async {
         print("Getting user...")
         guard let uid = Auth.auth().currentUser?.uid else { return }
-        
-        guard let snapshot = try? await Firestore.firestore().collection("users").document(uid).getDocument() else { return }
+        guard let snapshot = try? await db.collection("users").document(uid).getDocument() else { return }
         self.currentUser = try? snapshot.data(as: User.self)
         print("DEBUG: Current user is\(String(describing: self.currentUser))")
     }
 }
-    
+

@@ -6,17 +6,18 @@
 //
 
 import Foundation
-
 import SwiftUI
 
 struct ProfileView: View {
-    @EnvironmentObject var viewModel: AuthViewModel
+    //@EnvironmentObject var viewModel: AuthViewModel //Comment
     var body: some View {
-        if let user = viewModel.currentUser {
+        //if let user = viewModel.currentUser { //Comment
             List {
                 Section {
                     HStack {
-                        Text (user.initials)
+                        //Text (user.initials)
+                        //Text("MJ")
+                        Text(User.MOCK_USER.initials)
                             .font(.title)
                             .fontWeight(.semibold)
                             .foregroundColor(.white)
@@ -24,16 +25,18 @@ struct ProfileView: View {
                             .background(Color(.systemGray3))
                             .clipShape(Circle())
                         VStack (alignment: .leading, spacing: 4) {
-                            Text(user.fullname)
+                            //Text(user.fullname)
+                            //Text("Michael Jordan")
+                            Text(User.MOCK_USER.fullname)
                                 .font(.subheadline)
                                 .fontWeight(.semibold)
                                 .padding(.top, 4)
-                            Text(user.email)
+                            //Text(user.email)
+                            Text(User.MOCK_USER.email)
                                 .font(.footnote)
-                                .foregroundColor(.gray)
+                                .accentColor(.gray)
                         }
                     }
-                    
                 }
                 Section ("General") {
                     HStack {
@@ -49,7 +52,7 @@ struct ProfileView: View {
                 Section ("Account") {
                     Button {
                         print("Sign out...")
-                        viewModel.signOut()
+                        //viewModel.signOut()
                     } label: {
                         SettingsRowView(imageName: "arrow.left.circle.fill", title: "Sign out",
                             tintColor: .red)
@@ -63,11 +66,14 @@ struct ProfileView: View {
                 }
             }
         }
-    }
+    //} //Comment
 }
 
 struct ProfileView_Preview: PreviewProvider {
     static var previews: some View {
-        ProfileView()
+        // Create a sample AuthViewModel instance
+        //let viewModel = AuthViewModel() // Initialize your view model as needed
+        return ProfileView()
+          //  .environmentObject(viewModel) // Add the environment object
     }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		020E126B2CA07EE5004229F1 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020E126A2CA07EE5004229F1 /* MapView.swift */; };
+		020E126D2CA0A825004229F1 /* ParkingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020E126C2CA0A825004229F1 /* ParkingDetailView.swift */; };
 		D50F56412C9A3CA400880781 /* UniParkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50F56402C9A3CA400880781 /* UniParkApp.swift */; };
 		D50F56452C9A3CA600880781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D50F56442C9A3CA600880781 /* Assets.xcassets */; };
 		D50F56482C9A3CA600880781 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D50F56472C9A3CA600880781 /* Preview Assets.xcassets */; };
@@ -34,10 +36,17 @@
 		D50F56DC2C9F599D00880781 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50F56DB2C9F599C00880781 /* AuthViewModel.swift */; };
 		D50F56DE2C9F62F800880781 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50F56DD2C9F62F800880781 /* StartView.swift */; };
 		D50F56E02C9F634100880781 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50F56DF2C9F634100880781 /* ContentView.swift */; };
-		D5C583B92CA4B4E700CF847A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C583B82CA4B4E700CF847A /* MapView.swift */; };
-		D5C583BC2CA4B53A00CF847A /* ParkingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C583BB2CA4B53A00CF847A /* ParkingDetailView.swift */; };
-		D5C583BE2CA60B5100CF847A /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C583BD2CA60B5100CF847A /* Review.swift */; };
-		D5C583C02CA60DB700CF847A /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C583BF2CA60DB700CF847A /* ReviewView.swift */; };
+		D53A1D452CAB34370036C15A /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53A1D442CAB34370036C15A /* MenuView.swift */; };
+		D53A1D4B2CAC72ED0036C15A /* SideMenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53A1D4A2CAC72ED0036C15A /* SideMenuHeaderView.swift */; };
+		D53A1D4D2CAC7D3C0036C15A /* SideMenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53A1D4C2CAC7D3C0036C15A /* SideMenuRowView.swift */; };
+		D53A1D4F2CAC7E710036C15A /* SideMenuOptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53A1D4E2CAC7E710036C15A /* SideMenuOptionModel.swift */; };
+		D53A1D522CACADEF0036C15A /* ParkingSpotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53A1D512CACADEF0036C15A /* ParkingSpotViewModel.swift */; };
+		D53A1D542CACB29D0036C15A /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53A1D532CACB29D0036C15A /* TestView.swift */; };
+		D578C79C2CADE8D7003FD020 /* Reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D578C79B2CADE8D7003FD020 /* Reservation.swift */; };
+		D578C79E2CADEA86003FD020 /* ReservationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D578C79D2CADEA86003FD020 /* ReservationView.swift */; };
+		D578C7A02CADEEA5003FD020 /* ReservationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D578C79F2CADEEA5003FD020 /* ReservationViewModel.swift */; };
+		D578C7A22CADF35F003FD020 /* ReservationInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D578C7A12CADF35F003FD020 /* ReservationInfoView.swift */; };
+		D5E965FC2CADA354003B5013 /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E965FB2CADA354003B5013 /* FirestoreService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +67,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		020E126A2CA07EE5004229F1 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		020E126C2CA0A825004229F1 /* ParkingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingDetailView.swift; sourceTree = "<group>"; };
 		D50F563D2C9A3CA400880781 /* UniPark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniPark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D50F56402C9A3CA400880781 /* UniParkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniParkApp.swift; sourceTree = "<group>"; };
 		D50F56442C9A3CA600880781 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,10 +88,17 @@
 		D50F56DB2C9F599C00880781 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		D50F56DD2C9F62F800880781 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		D50F56DF2C9F634100880781 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		D5C583B82CA4B4E700CF847A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		D5C583BB2CA4B53A00CF847A /* ParkingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingDetailView.swift; sourceTree = "<group>"; };
-		D5C583BD2CA60B5100CF847A /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
-		D5C583BF2CA60DB700CF847A /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
+		D53A1D442CAB34370036C15A /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		D53A1D4A2CAC72ED0036C15A /* SideMenuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuHeaderView.swift; sourceTree = "<group>"; };
+		D53A1D4C2CAC7D3C0036C15A /* SideMenuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuRowView.swift; sourceTree = "<group>"; };
+		D53A1D4E2CAC7E710036C15A /* SideMenuOptionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionModel.swift; sourceTree = "<group>"; };
+		D53A1D512CACADEF0036C15A /* ParkingSpotViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingSpotViewModel.swift; sourceTree = "<group>"; };
+		D53A1D532CACB29D0036C15A /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		D578C79B2CADE8D7003FD020 /* Reservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reservation.swift; sourceTree = "<group>"; };
+		D578C79D2CADEA86003FD020 /* ReservationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationView.swift; sourceTree = "<group>"; };
+		D578C79F2CADEEA5003FD020 /* ReservationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationViewModel.swift; sourceTree = "<group>"; };
+		D578C7A12CADF35F003FD020 /* ReservationInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationInfoView.swift; sourceTree = "<group>"; };
+		D5E965FB2CADA354003B5013 /* FirestoreService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirestoreService.swift; path = ../../../../../../../Downloads/FirestoreService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +137,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		020E12652CA077F1004229F1 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				D53A1D502CACADC20036C15A /* ViewModel */,
+				020E126A2CA07EE5004229F1 /* MapView.swift */,
+				020E126C2CA0A825004229F1 /* ParkingDetailView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 		D50F56342C9A3CA400880781 = {
 			isa = PBXGroup;
 			children = (
@@ -190,8 +218,8 @@
 		D50F56AB2C9DACEB00880781 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				020E12652CA077F1004229F1 /* Map */,
 				D50F56AE2C9DAD6A00880781 /* Authentication */,
-				D5C583B72CA4B4B900CF847A /* Map */,
 				D50F56B02C9DADE500880781 /* Profile */,
 				D50F56AF2C9DAD7100880781 /* Root */,
 			);
@@ -211,7 +239,9 @@
 			isa = PBXGroup;
 			children = (
 				D50F56BD2C9F469200880781 /* User.swift */,
-				D5C583BD2CA60B5100CF847A /* Review.swift */,
+				D53A1D4E2CAC7E710036C15A /* SideMenuOptionModel.swift */,
+				D5E965FB2CADA354003B5013 /* FirestoreService.swift */,
+				D578C79B2CADE8D7003FD020 /* Reservation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -244,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				D50F56DB2C9F599C00880781 /* AuthViewModel.swift */,
+				D578C79F2CADEEA5003FD020 /* ReservationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -254,18 +285,22 @@
 				D50F56B62C9DB88B00880781 /* SingupView.swift */,
 				D50F56B12C9DAE2000880781 /* LoginView.swift */,
 				D50F56DD2C9F62F800880781 /* StartView.swift */,
-				D5C583BF2CA60DB700CF847A /* ReviewView.swift */,
+				D53A1D442CAB34370036C15A /* MenuView.swift */,
+				D53A1D4A2CAC72ED0036C15A /* SideMenuHeaderView.swift */,
+				D53A1D4C2CAC7D3C0036C15A /* SideMenuRowView.swift */,
+				D53A1D532CACB29D0036C15A /* TestView.swift */,
+				D578C79D2CADEA86003FD020 /* ReservationView.swift */,
+				D578C7A12CADF35F003FD020 /* ReservationInfoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		D5C583B72CA4B4B900CF847A /* Map */ = {
+		D53A1D502CACADC20036C15A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				D5C583B82CA4B4E700CF847A /* MapView.swift */,
-				D5C583BB2CA4B53A00CF847A /* ParkingDetailView.swift */,
+				D53A1D512CACADEF0036C15A /* ParkingSpotViewModel.swift */,
 			);
-			path = Map;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -416,16 +451,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				D50F56DE2C9F62F800880781 /* StartView.swift in Sources */,
+				D53A1D4B2CAC72ED0036C15A /* SideMenuHeaderView.swift in Sources */,
+				D578C79C2CADE8D7003FD020 /* Reservation.swift in Sources */,
+				D53A1D4D2CAC7D3C0036C15A /* SideMenuRowView.swift in Sources */,
 				D50F56B42C9DB0C900880781 /* InputView.swift in Sources */,
+				D578C7A02CADEEA5003FD020 /* ReservationViewModel.swift in Sources */,
 				D50F56B22C9DAE2000880781 /* LoginView.swift in Sources */,
-				D5C583B92CA4B4E700CF847A /* MapView.swift in Sources */,
+				020E126B2CA07EE5004229F1 /* MapView.swift in Sources */,
+				D578C7A22CADF35F003FD020 /* ReservationInfoView.swift in Sources */,
+				D53A1D542CACB29D0036C15A /* TestView.swift in Sources */,
 				D50F56B72C9DB88B00880781 /* SingupView.swift in Sources */,
+				D53A1D522CACADEF0036C15A /* ParkingSpotViewModel.swift in Sources */,
 				D50F56BE2C9F469200880781 /* User.swift in Sources */,
-				D5C583C02CA60DB700CF847A /* ReviewView.swift in Sources */,
+				D53A1D4F2CAC7E710036C15A /* SideMenuOptionModel.swift in Sources */,
 				D50F56B92C9DCA4300880781 /* ProfileView.swift in Sources */,
+				D53A1D452CAB34370036C15A /* MenuView.swift in Sources */,
 				D50F56E02C9F634100880781 /* ContentView.swift in Sources */,
-				D5C583BE2CA60B5100CF847A /* Review.swift in Sources */,
-				D5C583BC2CA4B53A00CF847A /* ParkingDetailView.swift in Sources */,
+				020E126D2CA0A825004229F1 /* ParkingDetailView.swift in Sources */,
+				D578C79E2CADEA86003FD020 /* ReservationView.swift in Sources */,
+				D5E965FC2CADA354003B5013 /* FirestoreService.swift in Sources */,
 				D50F56412C9A3CA400880781 /* UniParkApp.swift in Sources */,
 				D50F56BC2C9F386E00880781 /* SettingsRowView.swift in Sources */,
 				D50F56DC2C9F599D00880781 /* AuthViewModel.swift in Sources */,
@@ -594,6 +638,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"UniPark/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We use your location to show you parking lots around you";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -622,6 +667,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"UniPark/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We use your location to show you parking lots around you";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

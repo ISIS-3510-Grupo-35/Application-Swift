@@ -15,6 +15,8 @@ struct SignupView: View {
     @State private var password = ""
     @State private var confirmPassword = ""
     @State private var selectedUserType:String = "Driver"
+    //@State private var balance = 0
+    //@State private var favoriteParkingLots = [String]()
     @Environment(\.dismiss) var dismiss
     @EnvironmentObject var viewModel: AuthViewModel
     
@@ -75,7 +77,7 @@ struct SignupView: View {
                 Button{
                     print("Sign user up...")
                     Task {
-                        try await viewModel.createUser(withEmail:email, password:password,fullname:fullname)
+                        try await viewModel.createUser(withEmail:email, password:password ,fullname:fullname); //, isDriver: true, balance:balance, favoriteParkingLots: [])
                     }
                 } label: {
                     HStack {

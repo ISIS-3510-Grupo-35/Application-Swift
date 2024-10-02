@@ -31,8 +31,8 @@ struct StartView: View {
                         .frame(width: 200, height: 200)
                     
                     NavigationLink {
-                        LoginView()
-                        //.navigationBarBackButtonHidden(true)
+                        ProfileView()
+                        .navigationBarBackButtonHidden(true)
                     } label: {
                         HStack {
                             Text("Start")
