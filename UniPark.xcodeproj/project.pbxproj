@@ -46,7 +46,9 @@
 		D578C79E2CADEA86003FD020 /* ReservationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D578C79D2CADEA86003FD020 /* ReservationView.swift */; };
 		D578C7A02CADEEA5003FD020 /* ReservationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D578C79F2CADEEA5003FD020 /* ReservationViewModel.swift */; };
 		D578C7A22CADF35F003FD020 /* ReservationInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D578C7A12CADF35F003FD020 /* ReservationInfoView.swift */; };
-		D5E965FC2CADA354003B5013 /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E965FB2CADA354003B5013 /* FirestoreService.swift */; };
+		D59D60142CAE106900AACD04 /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59D60132CAE106900AACD04 /* FirestoreService.swift */; };
+		D59D60172CAE1A1900AACD04 /* ReservationDAOProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59D60162CAE1A1900AACD04 /* ReservationDAOProtocol.swift */; };
+		D59D60192CAE1A6200AACD04 /* ReservationDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59D60182CAE1A6200AACD04 /* ReservationDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,7 +100,9 @@
 		D578C79D2CADEA86003FD020 /* ReservationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationView.swift; sourceTree = "<group>"; };
 		D578C79F2CADEEA5003FD020 /* ReservationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationViewModel.swift; sourceTree = "<group>"; };
 		D578C7A12CADF35F003FD020 /* ReservationInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationInfoView.swift; sourceTree = "<group>"; };
-		D5E965FB2CADA354003B5013 /* FirestoreService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirestoreService.swift; path = ../../../../../../../Downloads/FirestoreService.swift; sourceTree = "<group>"; };
+		D59D60132CAE106900AACD04 /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
+		D59D60162CAE1A1900AACD04 /* ReservationDAOProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationDAOProtocol.swift; sourceTree = "<group>"; };
+		D59D60182CAE1A6200AACD04 /* ReservationDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,7 @@
 		020E12652CA077F1004229F1 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				D59D60152CAE19F500AACD04 /* DAO */,
 				D53A1D502CACADC20036C15A /* ViewModel */,
 				020E126A2CA07EE5004229F1 /* MapView.swift */,
 				020E126C2CA0A825004229F1 /* ParkingDetailView.swift */,
@@ -240,8 +245,8 @@
 			children = (
 				D50F56BD2C9F469200880781 /* User.swift */,
 				D53A1D4E2CAC7E710036C15A /* SideMenuOptionModel.swift */,
-				D5E965FB2CADA354003B5013 /* FirestoreService.swift */,
 				D578C79B2CADE8D7003FD020 /* Reservation.swift */,
+				D59D60132CAE106900AACD04 /* FirestoreService.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -301,6 +306,15 @@
 				D53A1D512CACADEF0036C15A /* ParkingSpotViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D59D60152CAE19F500AACD04 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				D59D60162CAE1A1900AACD04 /* ReservationDAOProtocol.swift */,
+				D59D60182CAE1A6200AACD04 /* ReservationDAO.swift */,
+			);
+			path = DAO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -452,9 +466,11 @@
 			files = (
 				D50F56DE2C9F62F800880781 /* StartView.swift in Sources */,
 				D53A1D4B2CAC72ED0036C15A /* SideMenuHeaderView.swift in Sources */,
+				D59D60192CAE1A6200AACD04 /* ReservationDAO.swift in Sources */,
 				D578C79C2CADE8D7003FD020 /* Reservation.swift in Sources */,
 				D53A1D4D2CAC7D3C0036C15A /* SideMenuRowView.swift in Sources */,
 				D50F56B42C9DB0C900880781 /* InputView.swift in Sources */,
+				D59D60142CAE106900AACD04 /* FirestoreService.swift in Sources */,
 				D578C7A02CADEEA5003FD020 /* ReservationViewModel.swift in Sources */,
 				D50F56B22C9DAE2000880781 /* LoginView.swift in Sources */,
 				020E126B2CA07EE5004229F1 /* MapView.swift in Sources */,
@@ -469,10 +485,10 @@
 				D50F56E02C9F634100880781 /* ContentView.swift in Sources */,
 				020E126D2CA0A825004229F1 /* ParkingDetailView.swift in Sources */,
 				D578C79E2CADEA86003FD020 /* ReservationView.swift in Sources */,
-				D5E965FC2CADA354003B5013 /* FirestoreService.swift in Sources */,
 				D50F56412C9A3CA400880781 /* UniParkApp.swift in Sources */,
 				D50F56BC2C9F386E00880781 /* SettingsRowView.swift in Sources */,
 				D50F56DC2C9F599D00880781 /* AuthViewModel.swift in Sources */,
+				D59D60172CAE1A1900AACD04 /* ReservationDAOProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,6 +20,7 @@ struct UniParkApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(viewModel)
+                //.environmentObject(ReservationViewModel())
         }
     }
 }
