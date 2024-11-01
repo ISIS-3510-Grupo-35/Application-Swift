@@ -51,7 +51,8 @@ struct ParkingDetailView: View {
             
             Button(action: {
                 print("Reserve now tapped!")
-                ReservationView()
+                Text("Reservation View")
+                //ReservationView()
             }) {
                 Text("Reserve now")
                     .fontWeight(.bold)

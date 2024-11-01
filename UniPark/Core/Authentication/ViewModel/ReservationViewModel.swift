@@ -12,10 +12,10 @@ import FirebaseFirestore
 import Combine
 import Foundation
 
-@MainActor
-class ReservationViewModel: ObservableObject {
-    @Published var reservations: [Reservation] = []
-    @Published var currentReservation: Reservation?
+@Observable
+class ReservationViewModel {
+    var reservations: [Reservation] = []
+    var currentReservation: Reservation?
     private let reservationDAO: ReservationDAOProtocol
     private var db = FirestoreService.shared.getFirestoreReference()
     
