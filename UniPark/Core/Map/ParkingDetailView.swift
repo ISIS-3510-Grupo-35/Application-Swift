@@ -51,7 +51,6 @@ struct ParkingDetailView: View {
             
             Button(action: {
                 print("Reserve now tapped!")
-                Text("Reservation View")
                 //ReservationView()
             }) {
                 Text("Reserve now")
