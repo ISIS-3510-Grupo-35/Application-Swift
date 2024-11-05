@@ -17,7 +17,7 @@ struct ProfileView: View {
                     HStack {
                         Text (user.initials)
                         //Text("MJ")
-                        Text(User.MOCK_USER.initials)
+                        //Text(User.MOCK_USER.initials)
                             .font(.title)
                             .fontWeight(.semibold)
                             .foregroundColor(.white)
@@ -72,8 +72,8 @@ struct ProfileView: View {
 struct ProfileView_Preview: PreviewProvider {
     static var previews: some View {
         // Create a sample AuthViewModel instance
-        let viewModel = AuthViewModel() // Initialize your view model as needed
+        let viewModel = AuthViewModel()
         return ProfileView()
-            .environmentObject(viewModel) // Add the environment object
+            .environmentObject(viewModel)
     }
 }
