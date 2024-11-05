@@ -40,7 +40,7 @@ struct ContentView: View {
                     }
                 }
             } else {
-                LoginView() // Show a starting view for users not signed in
+                LoginView()
             }
         }
     }
